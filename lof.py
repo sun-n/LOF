@@ -54,7 +54,7 @@ class LOF:
         return res
 
     def message(self, key, title, body):
-        msg_url = "https://sc.ftqq.com/{}.send?text={}&desp={}".format(key, title, body)
+        msg_url = "https://sctapi.ftqq.com/{}.send?title={}&desp={}".format(key, title, body)
         requests.get(msg_url)
 
     def main(self):
